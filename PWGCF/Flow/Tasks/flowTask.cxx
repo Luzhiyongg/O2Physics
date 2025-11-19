@@ -658,7 +658,7 @@ struct FlowTask {
     if (std::abs(track.eta()) < cfgEtaPtPt) {
       (dt == kGen) ? fFCptgen->fill(1., track.pt()) : fFCpt->fill(weff, track.pt());
     }
-    
+
     if (std::abs(track.eta()) < cfgEtaSubPtPt) {
       if (cfgEtaGapPtPtEnabled) {
         if (track.eta() < -1. * cfgEtaGapPtPt) {
