@@ -1389,7 +1389,7 @@ struct FlowTask {
       if (ptEtaVec.size() > 0) {
         for (auto trptEta : ptEtaVec) {
           registry.fill(HIST("hPt_afterDptCut"), trptEta.first);
-          if (trptEta.second < -1.*cfgAdditionObs.cfgDptDisEtaGapQA)
+          if (trptEta.second < -1. * cfgAdditionObs.cfgDptDisEtaGapQA)
             registry.fill(HIST("hPtA_afterDptCut"), trptEta.first);
           if (trptEta.second > cfgAdditionObs.cfgDptDisEtaGapQA)
             registry.fill(HIST("hPtB_afterDptCut"), trptEta.first);
