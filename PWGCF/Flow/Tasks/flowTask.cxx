@@ -21,8 +21,8 @@
 #include "PWGCF/GenericFramework/Core/GFWWeights.h"
 
 #include "Common/CCDB/EventSelectionParams.h"
-#include "Common/CCDB/ctpRateFetcher.h"
 #include "Common/CCDB/RCTSelectionFlags.h"
+#include "Common/CCDB/ctpRateFetcher.h"
 #include "Common/DataModel/Centrality.h"
 #include "Common/DataModel/EventSelection.h"
 #include "Common/DataModel/Multiplicity.h"
