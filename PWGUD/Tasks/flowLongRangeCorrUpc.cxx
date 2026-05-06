@@ -16,8 +16,8 @@
 
 #include "PWGCF/Core/CorrelationContainer.h"
 #include "PWGUD/Core/UDHelpers.h" // udhelpers::Bits256, makeBits256, testBit, getPhiEtaFromFitBit
-#include "PWGUD/Core/UpcService.h"
 #include "PWGUD/DataModel/UDTables.h"
+#include "PWGUD/DataModel/UDTruegapsideTables.h"
 
 #include "Common/Core/RecoDecay.h"
 

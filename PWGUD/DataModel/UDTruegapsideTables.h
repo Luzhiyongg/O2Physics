@@ -9,13 +9,13 @@
 // granted to it by virtue of its status as an Intergovernmental Organization
 // or submit itself to any jurisdiction.
 
-/// \file UpcService.h
+/// \file UpcTruegapsideTables.h
 /// \author Zhiyong Lu (zhiyong.lu@cern.ch)
 /// \since  Apr/7/2026
-/// \brief header defines some service outputs
+/// \brief header defines truegapside outputs
 
-#ifndef PWGUD_CORE_UPCSERVICE_H_
-#define PWGUD_CORE_UPCSERVICE_H_
+#ifndef PWGUD_DATAMODEL_UDTRUEGAPSIDETABLES_H_
+#define PWGUD_DATAMODEL_UDTRUEGAPSIDETABLES_H_
 
 #include <Framework/ASoA.h>
 #include <Framework/AnalysisDataModel.h>
@@ -38,4 +38,4 @@ DECLARE_SOA_COLUMN(Truegapside, truegapside, int);
 DECLARE_SOA_TABLE(Truegapside, "AOD", "TRUEGAPSIDE", upcservice::Truegapside);
 } // namespace o2::aod
 
-#endif // PWGUD_CORE_UPCSERVICE_H_
+#endif // PWGUD_DATAMODEL_UDTRUEGAPSIDETABLES_H_

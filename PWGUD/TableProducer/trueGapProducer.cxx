@@ -9,14 +9,14 @@
 // granted to it by virtue of its status as an Intergovernmental Organization
 // or submit itself to any jurisdiction.
 
-/// \file upcTrueGapService.cxx
+/// \file trueGapProducer.cxx
 /// \author Zhiyong Lu (zhiyong.lu@cern.ch)
 /// \since  Apr/7/2026
-/// \brief task providing truegap
+/// \brief task producing truegap
 
 #include "PWGUD/Core/SGSelector.h"
-#include "PWGUD/Core/UpcService.h"
 #include "PWGUD/DataModel/UDTables.h"
+#include "PWGUD/DataModel/UDTruegapsideTables.h"
 
 #include <Framework/ASoA.h>
 #include <Framework/AnalysisDataModel.h>
@@ -38,7 +38,7 @@ using namespace o2::framework::expressions;
 
 #define O2_DEFINE_CONFIGURABLE(NAME, TYPE, DEFAULT, HELP) Configurable<TYPE> NAME{#NAME, DEFAULT, HELP};
 
-struct UpcTrueGapService {
+struct TrueGapProducer {
   SGSelector sgSelector;
   Configurable<float> cfgCutFV0{"cfgCutFV0", 50., "FV0A threshold"};
   Configurable<float> cfgCutFT0A{"cfgCutFT0A", 150., "FT0A threshold"};
@@ -68,6 +68,6 @@ struct UpcTrueGapService {
 WorkflowSpec defineDataProcessing(ConfigContext const& cfgc)
 {
   return WorkflowSpec{
-    adaptAnalysisTask<UpcTrueGapService>(cfgc),
+    adaptAnalysisTask<TrueGapProducer>(cfgc),
   };
 }
