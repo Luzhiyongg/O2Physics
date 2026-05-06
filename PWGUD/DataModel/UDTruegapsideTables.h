@@ -9,7 +9,7 @@
 // granted to it by virtue of its status as an Intergovernmental Organization
 // or submit itself to any jurisdiction.
 
-/// \file UpcTruegapsideTables.h
+/// \file UDTruegapsideTables.h
 /// \author Zhiyong Lu (zhiyong.lu@cern.ch)
 /// \since  Apr/7/2026
 /// \brief header defines truegapside outputs
